@@ -1,9 +1,18 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'bootstrap-sass', '2.1'
+gem 'stripe'
+gem 'figaro'
+
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+group :production, :staging do
+  gem "pg"
+end
 
 gem 'sqlite3'
 
